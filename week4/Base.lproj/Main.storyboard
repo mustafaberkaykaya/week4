@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_2" translatesAutoresizingMaskIntoConstraints="NO" id="HF1-zp-hdJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nar-GS-232">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                 <subviews>
@@ -82,7 +85,7 @@
                                                 <state key="normal" title="SAVE"/>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="6au-6Q-f06" secondAttribute="trailing" constant="20" id="0VL-av-6dB"/>
                                             <constraint firstAttribute="bottom" secondItem="6au-6Q-f06" secondAttribute="bottom" constant="35" id="FDg-cg-APa"/>
@@ -108,10 +111,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HF1-zp-hdJ" secondAttribute="trailing" id="8Mw-Ol-Z1K"/>
+                            <constraint firstAttribute="bottom" secondItem="HF1-zp-hdJ" secondAttribute="bottom" id="AFz-1r-Vqn"/>
                             <constraint firstItem="Nar-GS-232" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IJb-eX-Iyh"/>
                             <constraint firstAttribute="trailing" secondItem="Nar-GS-232" secondAttribute="trailing" id="Pnv-Cl-O5y"/>
+                            <constraint firstItem="HF1-zp-hdJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aFv-3s-kFV"/>
                             <constraint firstItem="Nar-GS-232" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="c7I-el-IWE"/>
                             <constraint firstAttribute="bottom" secondItem="Nar-GS-232" secondAttribute="bottom" id="m2z-jU-xwe"/>
+                            <constraint firstItem="HF1-zp-hdJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="umT-FT-j4p"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="375" height="800"/>
@@ -122,6 +129,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background_2" width="640" height="1136"/>
         <image name="user" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
